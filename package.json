@@ -1,0 +1,21 @@
+{
+  "name": "mdrive",
+  "version": "1.0.0",
+  "description": "just a simple app to access some data in ai sites.",
+  "homepage": "https://github.com/mangesh04/mdrive#readme",
+  "bugs": {
+    "url": "https://github.com/mangesh04/mdrive/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mangesh04/mdrive.git"
+  },
+  "license": "ISC",
+  "author": "veerbhadra",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  }
+}
