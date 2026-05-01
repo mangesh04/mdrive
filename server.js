@@ -76,11 +76,11 @@ const pages = {
         `
     },
 
-    '/languages/python':     { title: 'Python',      body: '<h1>Python</h1><p>Python prompt goes here.</p><a href="/languages">← Back to Languages</a>' },
-    '/languages/javascript': { title: 'JavaScript',  body: '<h1>JavaScript</h1><p>JavaScript prompt goes here.</p><a href="/languages">← Back to Languages</a>' },
-    '/languages/java':       { title: 'Java',        body: '<h1>Java</h1><p>Java prompt goes here.</p><a href="/languages">← Back to Languages</a>' },
-    '/languages/c++':        { title: 'C++',         body: '<h1>C++</h1><p>C++ prompt goes here.</p><a href="/languages">← Back to Languages</a>' },
-    '/languages/ruby':       { title: 'Ruby',        body: '<h1>Ruby</h1><p>Ruby prompt goes here.</p><a href="/languages">← Back to Languages</a>' },
+    '/languages/python': { title: 'Python', body: '<h1>Python</h1><p>Python prompt goes here.</p><a href="/languages">← Back to Languages</a>' },
+    '/languages/javascript': { title: 'JavaScript', body: '<h1>JavaScript</h1><p>JavaScript prompt goes here.</p><a href="/languages">← Back to Languages</a>' },
+    '/languages/java': { title: 'Java', body: '<h1>Java</h1><p>Java prompt goes here.</p><a href="/languages">← Back to Languages</a>' },
+    '/languages/c++': { title: 'C++', body: '<h1>C++</h1><p>C++ prompt goes here.</p><a href="/languages">← Back to Languages</a>' },
+    '/languages/ruby': { title: 'Ruby', body: '<h1>Ruby</h1><p>Ruby prompt goes here.</p><a href="/languages">← Back to Languages</a>' },
 
     '/english': {
         title: 'English',
@@ -120,6 +120,7 @@ const server = http.createServer((req, res) => {
 
 });
 
-server.listen(3000, () => {
+
+server.listen(process.env.PORT || 3000, () => {
     console.log('Server running on port 3000');
 });
